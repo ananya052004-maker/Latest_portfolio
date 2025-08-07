@@ -1,0 +1,383 @@
+
+
+body {
+    background: linear-gradient(to right, #bc6c1c,#331c04);
+    font-family: Arial, sans-serif;
+    color: black;
+    padding: 20px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    background-color: #331c04;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 40px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover {
+    background: var(--secondary-color);
+}
+
+.top-bar {
+    background: linear-gradient(to right, #bc6c1c, #331c04);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 5px solid #bc6c1c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: 20px;
+}
+
+
+.text {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+    color: #f4e1d2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    .text h1 {
+        font-size: 28px;
+    }
+
+    .text h3 {
+        font-size: 16px;
+    }
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    color:#331c04;
+    margin-bottom: 10px;
+    
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #331c04;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile-pic{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.profile-pic {
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+
+.profile-name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    color: black;
+}
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edu-table th,
+.edu-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.edu-table th {
+    background-color:#331c04;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.edu-table tr:hover {
+    background-color: white;
+}
+
+.edu-table td {
+    font-weight: normal;
+}
+.edu-table tr {
+    background-color:#cbb198 ;
+}
+
+.edu-table caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+}
+
+.skills-table th,
+.skills-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #331c04;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.skills-table td {
+    font-weight: normal;
+}
+.skills-table tr {
+    background-color:#cbb198 ;
+}
+
+.pic-text, .pic-text2 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    margin-left: 26%;
+}
+
+
+.pic1 {
+    margin-bottom: 10px;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid #0f0806; 
+}
+
+
+.pic2 {
+    margin-bottom: 10px;
+    max-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 2px solid #0f0806; 
+}
+
+.pic-description {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e4d3c3;
+    border-left: 5px solid#bc6c1c ;
+    color: black;
+    border-radius: 5px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.bottom-bar {
+    background-color: #331c04;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    height:34%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.bottom-bar a {
+    color:#bc6c1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-bar a:hover {
+    text-decoration: underline;
+}
+h2, h3 {
+    border-bottom: 2px solid #0f0806;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+h2:first-of-type {
+    border-bottom: none;
+}
+.top-bar h3 {
+    border-bottom: none;
+}
+.skills-table {
+    border-bottom: none;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
