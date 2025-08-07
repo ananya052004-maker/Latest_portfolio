@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #dd8b33, #522c04);
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #281b18;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #251f1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+.profile-pic{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #282220;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-name {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.edu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edu-table th,
+.edu-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.edu-table th {
+    background-color: #706764;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.edu-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.edu-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.edu-table td {
+    font-weight: normal;
+}
+
+.edu-table caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}

@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Press Start 2P", serif;
+  font-weight: 350;
+  font-style: normal;
+  background-color: black;
+  color: white;
+  height: 90vh;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+}
+.nav-container{
+  display: flex;
+  gap: 18px;
+}
+.top-bar > * {
+  margin: 0 5px;
+}
+img{
+  position: absolute;
+}
+
+.orange-text {
+  margin: 0;
+  color: orange;
+  font-size: 18px;
+}
+
+.white-text {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.white-bold 
+{
+  color: rgb(247, 176, 83);
+  font-weight: bold;
+  font-size: 78px;
+  text-shadow: 
+        
+
+        2px 2px 0px #ff6347,
+        0px 0px 16px #ff4500,
+        6px 6px 0px #e88112,
+        8px 8px 0px #f7f9fb;
+       
+       
+    
+}
+
+
+.center-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: white;
+}
+.container{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.rectangle {
+  width: 80px;
+  height: 5px;
+  background-color: rgb(241, 188, 149);
+  border: 2px solid rgb(239, 103, 12);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  text-align: left;
+  padding: 10px;
+  display:flex;
+  position:absolute;
+  top: 32px;
+  right: 20px;
+  align-items: center;
+}
+.image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -4px;
+  left: 70px;
+}
+
+.image1{
+  top: 28px;
+  left: 10px;
+}
+
+.image2 {
+  top: 89px;
+  left: 925px;
+  
+}
+.image21 {
+  
+  top: 311px;
+  left: -52px;
+  
+}
+
+.image3 {
+  
+  top: 340px;
+  right: -83px;
+}
+
+.image31 {
+  
+  top: -125px;
+  left: -165px;
+}
+
+.image4 {
+
+  top: -126px;
+  right: -85px;
+}
+
+.image41 {
+  
+  top: 80px;
+  right: 945px;
+}
+.top-bar {
+  background: linear-gradient(to right, #bc6c1c, #331c04);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  position: relative;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-right: 20px;
+}
+
+.text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.text h1 {
+  margin-left: 64%;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text h3 {
+  margin-left:64%;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 5px;
+}
