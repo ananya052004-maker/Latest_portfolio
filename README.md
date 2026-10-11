@@ -52,4 +52,4 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-Deployed via [Netlify](https://www.netlify.com/), auto-deploying from the `main` branch of this repository.
+A static site with no build step, so it can be hosted anywhere that serves static files (GitHub Pages, etc.), deploying automatically from the `main` branch.
