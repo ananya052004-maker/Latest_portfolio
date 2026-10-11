@@ -4,151 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ana.css">
-    <title>Ananya Jain - Portfolio</title>
+    <title>Ananya Jain &mdash; Full-Stack Developer</title>
+    <script>
+        function avatarFallback(img) {
+            img.onerror = null;
+            const fallback = document.createElement('div');
+            fallback.className = img.className + ' avatar-fallback';
+            fallback.textContent = 'AJ';
+            img.replaceWith(fallback);
+        }
+    </script>
 </head>
 <body>
-    <header class="main-header">
-        <nav class="nav-links">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <div class="container">
-        <div class="top-bar">
-            <img src="img777.png" alt="Ananya Jain" class="profile-pic">
-            <div class="text">
-                <h1><strong>Ananya Jain</strong></h1>
-                <h3>B.Tech in Computer Science | VIT Vellore</h3>
+    <nav class="navbar">
+        <a href="#hero" class="nav-logo">AJ<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <canvas id="heroCanvas" class="hero-canvas"></canvas>
+        <div class="hero-content reveal">
+            <p class="hero-eyebrow">Full-Stack Developer</p>
+            <h1 class="hero-title">Ananya Jain</h1>
+            <p class="hero-subtitle">I build things end-to-end &mdash; from the interface a user touches to the backend logic that powers it. B.Tech CSE (IoT), VIT Vellore.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
             </div>
         </div>
+        <div class="scroll-cue"><span></span></div>
+    </section>
 
-        <h2 id="about">About Myself</h2>
-        <p>Hey! I am <strong>Ananya Jain</strong>, a passionate software developer and tech enthusiast. I specialize in building innovative solutions and have a keen interest in Internet of Things.</p>
-        <p>Currently pursuing my Bachelor’s degree in Computer Science at VIT University, I have honed my skills in programming, problem-solving, and emerging technologies. I enjoy takling new challenges and collaborating on impactful projects.</p>
-
-        <h2 id="education">Educational Qualification</h2>
-        <table class="edu-table">
-            <thead>
-                <tr>
-                    <th>Level</th>
-                    <th>School/College</th>
-                    <th>Percentage</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>10th Grade</td>
-                    <td>ST JAMES School, Hardoi</td>
-                    <td>95%</td>
-                </tr>
-                <tr>
-                    <td>12th Grade</td>
-                    <td>RANI LAXMI BAI MEMORIAL SCHOOL, Lucknow</td>
-                    <td>93%</td>
-                </tr>
-                <tr>
-                    <td>Bachelor's Degree</td>
-                    <td>VIT University (IoT specialization)</td>
-                    <td>Currently Pursuing</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 id="hobbies">Hobbies</h2>
-        <ul>
-            <li>Creative artist make sketches and portraits.</li>
-            <li>Playing sports such as basketball, chess, and badminton.</li>
-            <li>I am a UI/UX designer and have created many Instagram posts for the IEEE CS Chapter, designed HackBattle website.</li>
-            <li>Passionate about traveling to historic destinations.</li>
-        </ul>
-
-        <h2 id="skills">Skills</h2>
-        <p>Here is a link for a web page that helps the user understand web terminologies <a href="https://web.stanford.edu/group/csp/cs03/week1/text9.html" class="link">Web</a></p>
-
-        <h3>Technical Skills</h3>
-        <table class="skills-table">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Programming languages</td>
-                    <td>Python, Java, C, C++</td>
-                </tr>
-                <tr>
-                    <td>Data Structures</td>
-                    <td>In-depth knowledge of data structures in C programming language</td>
-                </tr>
-                <tr>
-                    <td>Object-Oriented Programming</td>
-                    <td>Experience with OOP concepts and design patterns</td>
-                </tr>
-                <tr>
-                    <td>Emerging Technologies</td>
-                    <td>Exploring cutting-edge technologies to stay ahead in the field</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3>Soft Skills</h3>
-        <table class="skills-table">
-            <thead>
-                <tr>
-                    <th>Skill</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Communication</td>
-                    <td>Strong verbal and written communication skills</td>
-                </tr>
-                <tr>
-                    <td>Collaboration</td>
-                    <td>Effective in teamwork and collaborative environments</td>
-                </tr>
-                <tr>
-                    <td>Problem Solving</td>
-                    <td>Skilled in identifying and resolving complex problems</td>
-                </tr>
-                <tr>
-                    <td>Leadership</td>
-                    <td>Leadership role as Senior Core in Design Domain, IEEE-CS Chapter</td>
-                </tr>
-                <tr>
-                    <td>Event Panelist</td>
-                    <td>Panelist at HACKBATTLE 2024</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 id="achievements">Achievements Section</h2>
-        <img src="cer1.png" alt="C Programming Course Certificate" class="pic1">
-        <p class="pic-text">Received a certificate for completing C programming course on Udemy.</p>
-        <p class="pic-description">This certificate represents my completion of the C programming course on Udemy, which solidified my foundation in programming. The course covered key concepts like variables, control structures, functions, and data types, which are essential for understanding the inner workings of software development. This achievement helped me strengthen my problem-solving abilities and has been a critical stepping stone in my programming journey.</p>
-
-        <img src="cer2.png" alt="HackBattle 2023 Certificate" class="pic2">
-        <p class="pic-text2">Received a certificate during Gravitas 2023 for participating in HackBattle, a hackathon organized by the IEEE-CS Chapter.</p>
-        <p class="pic-description">This certificate highlights my participation in HackBattle 2023, a hackathon hosted by the IEEE-CS Chapter. The event was a challenging competition where teams worked under time constraints to develop innovative solutions. I contributed to our team's problem-solving efforts, learning valuable skills in collaboration, coding under pressure, and implementing creative solutions for real-world problems.</p>
-
-        <div style="clear: both;"></div>
-
-        <h2 id="contact">Contact Me</h2>
-        <div class="bottom-bar">
-            <p>Email: <a href="mailto:ananya2004jain@gmail.com">ananya2004jain@gmail.com</a></p>
-            <p>Phone: 9555625612</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/ananya-jain" target="_blank">linkedin.com/in/ananya-jain</a></p>
+    <section class="section" id="about">
+        <div class="section-inner about-grid reveal">
+            <div class="about-photo">
+                <img src="img777.png" alt="Ananya Jain" onerror="avatarFallback(this)">
+            </div>
+            <div class="about-text">
+                <p class="section-eyebrow">About</p>
+                <h2>Who I Am</h2>
+                <p>Hey! I'm <strong>Ananya Jain</strong>, a full-stack developer who loves building things end-to-end. I've worked across a wide range of projects &mdash; multi-agent AI systems, medical imaging models, mobile apps &mdash; and I genuinely enjoy solving real-world problems with code.</p>
+                <p>I bring strong problem-solving skills to everything I build, and as Senior Core Member of the IEEE Computer Society's Design Domain at VIT, I've also led the Gravitas Hackathon frontend and mentored 50+ peers on DSA.</p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+        <div class="section-inner reveal">
+            <p class="section-eyebrow">Experience</p>
+            <h2>Where I've Worked</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>React Developer &mdash; Blaugarnet</h3>
+                        <span class="timeline-date">Jun 2026 &ndash; Jul 2026</span>
+                    </div>
+                    <p class="timeline-stack">React &middot; Figma &middot; REST APIs &middot; WebSockets</p>
+                    <ul>
+                        <li>Translated Figma designs into a pixel-accurate, responsive UI using React.</li>
+                        <li>Integrated the frontend with backend REST APIs, powering LLM-backed agent features.</li>
+                        <li>Replaced inefficient polling with server-pushed WebSocket updates &mdash; cutting LLM API usage and removing per-poll latency.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>React Native Developer &mdash; Tracerty</h3>
+                        <span class="timeline-date">Mar 2026 &ndash; May 2026</span>
+                    </div>
+                    <p class="timeline-stack">React Native &middot; SQLite &middot; RBAC</p>
+                    <ul>
+                        <li>Developed the mobile app using React Native, contributing to the MVP Phase 1 launch.</li>
+                        <li>Designed and implemented role-based access control across farmer, transporter, and shelf-level roles.</li>
+                        <li>Implemented offline-first local storage using SQLite, auto-syncing on network recovery.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="section-inner reveal">
+            <p class="section-eyebrow">Projects</p>
+            <h2>What I've Built</h2>
+            <div class="project-grid">
+                <article class="project-card tilt-card">
+                    <h3>Stock Market Analysis System</h3>
+                    <p class="project-stack">Python &middot; LangGraph &middot; MCP &middot; Pydantic</p>
+                    <p>A multi-agent stock analysis system with two interlinked LangGraph pipelines over MCP &mdash; a market analyst subgraph and a top-level agentic manager, producing structured, confidence-scored decision reports.</p>
+                </article>
+                <article class="project-card tilt-card">
+                    <h3>Deep Learning for Medical Imaging</h3>
+                    <p class="project-stack">PyTorch &middot; ResNet50 &middot; scikit-learn</p>
+                    <p>Classified chest CT scans into four categories via transfer learning on ResNet50 &mdash; 83.0% accuracy, 0.946 macro AUC-ROC, with class-weighted loss to resolve imbalance.</p>
+                </article>
+                <article class="project-card tilt-card">
+                    <h3>Local-First Browser Automation Bridge</h3>
+                    <p class="project-stack">Rust &middot; TypeScript &middot; CDP</p>
+                    <p>A local-first automation stack letting MCP agents drive a signed-in Chrome browser with no remote debug port, secured with owner-only Unix sockets and capability tokens.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+        <div class="section-inner reveal">
+            <p class="section-eyebrow">Skills</p>
+            <h2>Toolbox</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages</h3>
+                    <div class="tag-row">
+                        <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Rust</span><span class="tag">C</span><span class="tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Frontend</h3>
+                    <div class="tag-row">
+                        <span class="tag">React</span><span class="tag">React Native</span><span class="tag">Figma-to-code</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>AI &amp; Automation</h3>
+                    <div class="tag-row">
+                        <span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">OpenAI API</span><span class="tag">PyTorch</span><span class="tag">asyncio</span><span class="tag">WebSockets</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Databases</h3>
+                    <div class="tag-row">
+                        <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools</h3>
+                    <div class="tag-row">
+                        <span class="tag">Git</span><span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">REST APIs</span><span class="tag">CI/CD</span><span class="tag">DSA (300+ LeetCode)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="education">
+        <div class="section-inner reveal">
+            <p class="section-eyebrow">Education</p>
+            <h2>Academic Record</h2>
+            <table class="edu-table">
+                <thead><tr><th>Level</th><th>School / College</th><th>Score</th></tr></thead>
+                <tbody>
+                    <tr><td>10th Grade</td><td>ST JAMES School, Hardoi</td><td>95%</td></tr>
+                    <tr><td>12th Grade (CBSE)</td><td>Rani Laxmi Bai Memorial School, Lucknow</td><td>91.6%</td></tr>
+                    <tr><td>B.Tech, CSE (IoT)</td><td>Vellore Institute of Technology (VIT) &mdash; 2023&ndash;2027</td><td>CGPA: 9.15</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="achievements">
+        <div class="section-inner reveal">
+            <p class="section-eyebrow">Achievements</p>
+            <h2>Milestones</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <img src="cer1.png" alt="C Programming Course Certificate" onerror="this.style.display='none'">
+                    <p>Completed a C programming course on Udemy, strengthening core programming fundamentals.</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="cer2.png" alt="HackBattle 2023 Certificate" onerror="this.style.display='none'">
+                    <p>Participated in HackBattle 2023, a hackathon by the IEEE-CS Chapter.</p>
+                </div>
+            </div>
+            <ul class="extracurriculars">
+                <li><strong>IEEE Computer Society, VIT</strong> &mdash; Senior Core Member: Led Gravitas Hackathon frontend and visual design.</li>
+                <li><strong>Juvenile Care, VIT</strong> &mdash; Program &amp; Events Head (2025&ndash;Present).</li>
+                <li><strong>Hackathons</strong>: Finalist, Hexathon (GDSC) &amp; HackBattle (IEEE CS); built StressSense at Makethon 2024.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="section-inner contact-inner reveal">
+            <p class="section-eyebrow">Contact</p>
+            <h2>Let's Build Something Together</h2>
+            <p class="contact-lead">Open to full-stack roles, collaborations, and interesting problems.</p>
+            <div class="contact-links">
+                <a href="mailto:ananya2004jain@gmail.com" class="btn btn-primary">Email Me</a>
+                <a href="https://www.linkedin.com/in/ananyajain5104" target="_blank" class="btn btn-outline">LinkedIn</a>
+                <a href="https://github.com/ananya052004-maker" target="_blank" class="btn btn-outline">GitHub</a>
+                <a href="https://leetcode.com/u/23ananya" target="_blank" class="btn btn-outline">LeetCode</a>
+            </div>
+            <p class="contact-phone">+91-9555625612</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Ananya Jain</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
