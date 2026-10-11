@@ -2,8 +2,6 @@
 
 My personal portfolio site: a single-page, dark-themed site built with plain HTML, CSS, and JavaScript, featuring a live 3D hero scene built with [Three.js](https://threejs.org/).
 
-**Live site:** [grand-manatee-5d2878.netlify.app](https://grand-manatee-5d2878.netlify.app/)
-
 ## Features
 
 - **3D hero scene** — a rotating wireframe icosahedron with orbiting satellite shapes, built with Three.js, that tilts toward the cursor.
