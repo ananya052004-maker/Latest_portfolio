@@ -2,6 +2,8 @@
 
 My personal portfolio site: a single-page, dark-themed site built with plain HTML, CSS, and JavaScript, featuring a live 3D hero scene built with [Three.js](https://threejs.org/).
 
+**Live site:** [ananya052004-maker.github.io/Latest_portfolio](https://ananya052004-maker.github.io/Latest_portfolio/)
+
 ## Features
 
 - **3D hero scene** — a rotating wireframe icosahedron with orbiting satellite shapes, built with Three.js, that tilts toward the cursor.
@@ -52,4 +54,4 @@ Then visit `http://localhost:8000`.
 
 ## Deployment
 
-A static site with no build step, so it can be hosted anywhere that serves static files (GitHub Pages, etc.), deploying automatically from the `main` branch.
+A static site with no build step, hosted on GitHub Pages, deploying automatically from the `main` branch.
